@@ -2,12 +2,14 @@
   "private": true,
   "scripts": {
     "build": "nuxt build",
+    "build:lamba": "NITRO_PRESET=aws-lambda npm run build",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
-    "nuxt": "^3.2.0"
+    "nuxt": "^3.2.0",
+    "serverless": "^3.36.0"
   }
 }

@@ -1,0 +1,15 @@
+service: nuxt-starter
+frameworkVersion: '3'
+provider:
+  name: aws
+  stage: dev
+  region: ap-northeast-1
+  runtime: nodejs18.x
+package:
+  patterns:
+    - '!**'
+    - '.output/**' # nuxt run buildの出力ディレクトリ
+functions:
+  NuxtSsrEngine:
+    handler: '.output/server/index.mjs'
+    url: true # Lambda function URLを有効
