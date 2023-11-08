@@ -8,7 +8,8 @@ provider:
 package:
   patterns:
     - '!**'
-    - '.output/**' # nuxt run buildの出力ディレクトリ
+    - '.output/**'
+    
 functions:
   NuxtSsrEngine:
     handler: '.output/server/index.mjs'

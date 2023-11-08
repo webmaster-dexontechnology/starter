@@ -1,8 +1,15 @@
+# package directories
 node_modules
-*.log*
-.nuxt
-.nitro
-.cache
-.output
-.env
+jspm_packages
+*.log
 dist
+.nuxt
+.env
+.idea/
+
+# Storyblok
+localhost.pem
+localhost-key.pem
+
+# Serverless directories
+.serverless
