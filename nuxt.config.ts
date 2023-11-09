@@ -1,6 +1,5 @@
 export default defineNuxtConfig({
     app: {
-      cdnURL: 'https://y7sllzb2hyxilfzl5g26cpzf6a0soluc.lambda-url.ap-northeast-1.on.aws/',
       head: {
         title: "Title of your website",
         htmlAttrs: {
@@ -18,8 +17,7 @@ export default defineNuxtConfig({
     devtools: { enabled: true },
   
     nitro: {
-      preset: "aws-lambda",
+      preset: 'aws-lambda',
       inlineDynamicImports: true,
-      serveStatic: true,
     },  
   });

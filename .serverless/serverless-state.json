@@ -7,7 +7,7 @@
     "provider": {
       "name": "aws",
       "stage": "dev",
-      "region": "ap-northeast-1",
+      "region": "ap-southeast-1",
       "runtime": "nodejs18.x",
       "versionFunctions": true,
       "compiledCloudFormationTemplate": {
@@ -174,7 +174,7 @@
                 "S3Bucket": {
                   "Ref": "ServerlessDeploymentBucket"
                 },
-                "S3Key": "serverless/nuxt-starter/dev/1699455197216-2023-11-08T14:53:17.216Z/nuxt-starter.zip"
+                "S3Key": "serverless/nuxt-starter/dev/1699518935652-2023-11-09T08:35:35.652Z/nuxt-starter.zip"
               },
               "Handler": ".output/server/index.mjs",
               "Runtime": "nodejs18.x",
@@ -192,14 +192,14 @@
               "NuxtSsrEngineLogGroup"
             ]
           },
-          "NuxtSsrEngineLambdaVersionkTbv7HpHGBqqKAx2ZbwclvGZh0k0o24c7l24XAKBQc": {
+          "NuxtSsrEngineLambdaVersionoXh6hrFZipLWHskAXNIKJRaPyO0vP3k4sEto5XnmpBY": {
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
                 "Ref": "NuxtSsrEngineLambdaFunction"
               },
-              "CodeSha256": "0rQAnaEP7YtrmSke19waneCIQBNiUg6u/GYw8RoQRR8="
+              "CodeSha256": "iL+bH4rDeqScpF9XMISdKvMgpHDBcpDInLa9H1DiEhI="
             }
           },
           "NuxtSsrEngineLambdaFunctionUrl": {
@@ -238,7 +238,7 @@
           "NuxtSsrEngineLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "NuxtSsrEngineLambdaVersionkTbv7HpHGBqqKAx2ZbwclvGZh0k0o24c7l24XAKBQc"
+              "Ref": "NuxtSsrEngineLambdaVersionoXh6hrFZipLWHskAXNIKJRaPyO0vP3k4sEto5XnmpBY"
             },
             "Export": {
               "Name": "sls-nuxt-starter-dev-NuxtSsrEngineLambdaFunctionQualifiedArn"
@@ -354,7 +354,7 @@
         "timeout": 6,
         "runtime": "nodejs18.x",
         "vpc": {},
-        "versionLogicalId": "NuxtSsrEngineLambdaVersionkTbv7HpHGBqqKAx2ZbwclvGZh0k0o24c7l24XAKBQc"
+        "versionLogicalId": "NuxtSsrEngineLambdaVersionoXh6hrFZipLWHskAXNIKJRaPyO0vP3k4sEto5XnmpBY"
       }
     },
     "configValidationMode": "warn",
@@ -371,8 +371,8 @@
           ".output/**"
         ],
         "artifactsS3KeyDirname": "serverless/nuxt-starter/dev/code-artifacts",
-        "artifact": "D:\\MAD Developer\\Work\\Website\\Dexon\\www\\starter\\.serverless\\nuxt-starter.zip",
-        "artifactDirectoryName": "serverless/nuxt-starter/dev/1699455197216-2023-11-08T14:53:17.216Z"
+        "artifact": "D:\\Panupong\\Work\\Website\\Dexon Technology\\www\\starter\\.serverless\\nuxt-starter.zip",
+        "artifactDirectoryName": "serverless/nuxt-starter/dev/1699518935652-2023-11-09T08:35:35.652Z"
       },
       "functions": {
         "$ref": "$[\"service\"][\"functions\"]"
@@ -380,10 +380,10 @@
     },
     "layers": {},
     "isDashboardMonitoringPreconfigured": false,
-    "artifact": "D:\\MAD Developer\\Work\\Website\\Dexon\\www\\starter\\.serverless\\nuxt-starter.zip"
+    "artifact": "D:\\Panupong\\Work\\Website\\Dexon Technology\\www\\starter\\.serverless\\nuxt-starter.zip"
   },
   "package": {
-    "artifactDirectoryName": "serverless/nuxt-starter/dev/1699455197216-2023-11-08T14:53:17.216Z",
+    "artifactDirectoryName": "serverless/nuxt-starter/dev/1699518935652-2023-11-09T08:35:35.652Z",
     "artifact": "nuxt-starter.zip"
   }
 }
