@@ -10,15 +10,6 @@ import { defineHeadPlugin, composableNames } from '@unhead/shared';
 import http from 'node:http';
 import https from 'node:https';
 import { createMemoryHistory, createRouter as createRouter$2, START_LOCATION, useRoute as useRoute$1, RouterView } from 'vue-router';
-import { handler } from './.output/server'
-
-const handler = async (event) => {
-  const { statusCode, headers, body } = await _handler({ path: "/" });
-  return { statusCode, headers, body };
-}; 
-export {
-  handler
-};
 
 const HASH_RE = /#/g;
 const AMPERSAND_RE = /&/g;
@@ -3069,7 +3060,7 @@ function klona(x) {
 
 const inlineAppConfig = {
   "nuxt": {
-    "buildId": "e76a5dfc-4d38-45ba-a428-1a735f294a5b"
+    "buildId": "39d7f3cf-33a3-4e6c-aef6-43d3d92b9595"
   }
 };
 
@@ -4476,7 +4467,7 @@ const storage = createStorage({});
 
 storage.mount('/assets', assets);
 
-storage.mount('data', unstorage_47drivers_47fs_45lite({"driver":"fsLite","base":"D:\\Panupong\\Work\\Website\\Dexon Technology\\www\\starter\\.data\\kv"}));
+storage.mount('data', unstorage_47drivers_47fs_45lite({"driver":"fsLite","base":"D:\\MAD Developer\\Work\\Website\\Dexon\\www\\starter\\.data\\kv"}));
 
 function useStorage(base = "") {
   return base ? prefixStorage(storage, base) : storage;
@@ -5058,15 +5049,15 @@ const errorHandler = (async function errorhandler(error, event) {
   return send(event, html);
 });
 
-const _lazy_ooyZjU = () => Promise.resolve().then(function () { return hello$1; });
-const _lazy_mMVzmu = () => Promise.resolve().then(function () { return submit_post$1; });
-const _lazy_ReMyGF = () => Promise.resolve().then(function () { return renderer$1; });
+const _lazy_dARJzk = () => Promise.resolve().then(function () { return hello$1; });
+const _lazy_vdiSPh = () => Promise.resolve().then(function () { return submit_post$1; });
+const _lazy_01CanR = () => Promise.resolve().then(function () { return renderer$1; });
 
 const handlers = [
-  { route: '/api/hello', handler: _lazy_ooyZjU, lazy: true, middleware: false, method: undefined },
-  { route: '/api/submit', handler: _lazy_mMVzmu, lazy: true, middleware: false, method: "post" },
-  { route: '/__nuxt_error', handler: _lazy_ReMyGF, lazy: true, middleware: false, method: undefined },
-  { route: '/**', handler: _lazy_ReMyGF, lazy: true, middleware: false, method: undefined }
+  { route: '/api/hello', handler: _lazy_dARJzk, lazy: true, middleware: false, method: undefined },
+  { route: '/api/submit', handler: _lazy_vdiSPh, lazy: true, middleware: false, method: "post" },
+  { route: '/__nuxt_error', handler: _lazy_01CanR, lazy: true, middleware: false, method: undefined },
+  { route: '/**', handler: _lazy_01CanR, lazy: true, middleware: false, method: undefined }
 ];
 
 function createNitroApp() {
@@ -5685,12 +5676,12 @@ const client_manifest = {
     "preload": true,
     "file": "_plugin-vue_export-helper.c27b6911.js"
   },
-  "_vue.f36acd1f.395c1780.js": {
+  "_vue.f36acd1f.7040757d.js": {
     "resourceType": "script",
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "vue.f36acd1f.395c1780.js",
+    "file": "vue.f36acd1f.7040757d.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js"
     ]
@@ -5708,10 +5699,10 @@ const client_manifest = {
     "prefetch": true,
     "preload": true,
     "css": [],
-    "file": "error-404.b428f952.js",
+    "file": "error-404.3e7405b1.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js",
-      "_vue.f36acd1f.395c1780.js",
+      "_vue.f36acd1f.7040757d.js",
       "__plugin-vue_export-helper.c27b6911.js"
     ],
     "isDynamicEntry": true,
@@ -5736,9 +5727,9 @@ const client_manifest = {
     "prefetch": true,
     "preload": true,
     "css": [],
-    "file": "error-500.e9bae622.js",
+    "file": "error-500.1ba674cd.js",
     "imports": [
-      "_vue.f36acd1f.395c1780.js",
+      "_vue.f36acd1f.7040757d.js",
       "__plugin-vue_export-helper.c27b6911.js",
       "node_modules/nuxt/dist/app/entry.js"
     ],
@@ -5760,7 +5751,7 @@ const client_manifest = {
       "node_modules/@nuxt/ui-templates/dist/templates/error-404.vue",
       "node_modules/@nuxt/ui-templates/dist/templates/error-500.vue"
     ],
-    "file": "entry.801b9d5f.js",
+    "file": "entry.04bc1b54.js",
     "isEntry": true,
     "src": "node_modules/nuxt/dist/app/entry.js"
   },
@@ -5769,7 +5760,7 @@ const client_manifest = {
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "index.044527bf.js",
+    "file": "index.5d13c476.js",
     "imports": [
       "__plugin-vue_export-helper.c27b6911.js",
       "node_modules/nuxt/dist/app/entry.js"
